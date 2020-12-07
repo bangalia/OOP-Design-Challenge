@@ -3,3 +3,4 @@ class cupcake:
 
         self.flavor = flavor
         self.icing = icing
+
