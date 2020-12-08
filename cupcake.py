@@ -5,6 +5,7 @@ class cupcake:
 
         self.flavor = flavor
         self.icing = icing
+        self.toppings = list()
 
-    @classmethod
-    def build_cupcake(cls,toppings):
+    def build_cupcake(self,toppings):
+        self.toppings.append()
