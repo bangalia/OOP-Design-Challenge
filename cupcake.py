@@ -1,6 +1,10 @@
+from toppings import Toppings
+
 class cupcake:
     def __init__(self,flavor,icing):
 
         self.flavor = flavor
         self.icing = icing
 
+    @classmethod
+    def build_cupcake(cls,toppings):
