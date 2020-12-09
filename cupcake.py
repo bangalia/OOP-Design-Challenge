@@ -1,6 +1,6 @@
 from toppings import Toppings
 
-class cupcake:
+class Cupcake:
     def __init__(self,flavor,icing):
 
         self.flavor = flavor

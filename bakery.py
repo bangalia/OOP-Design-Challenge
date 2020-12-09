@@ -6,3 +6,5 @@ class Bakery:
     def welcome(self):
         greeting = "Hello and welcome to the Bakery!"
         print(greeting)
+    
+    
