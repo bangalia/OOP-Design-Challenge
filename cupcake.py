@@ -7,5 +7,16 @@ class Cupcake:
         self.icing = icing
         self.toppings = list()
 
-    def build_cupcake(self,toppings):
-        self.toppings.append()
+    def order_chocolate(self):
+        return f"You order a {self.flavor} cupcake with {self.icing}"
+
+    def order_vanilla(self):
+        return f"You ordered a {self.flavor} cupcake {self.icing}"
+    
+    @classmethod
+    def gf(cls,glutenfree):
+        return f"I need a {glutenfree} cupcake please"
+
+
+    order_chocolate = Cupcake("chocolate","chocolate")
+    order_vanilla = Cupcake("vanilla,vanilla")

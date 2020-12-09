@@ -3,8 +3,10 @@ class Bakery:
         self.greeting = greeting
         #self.goodbye = goodbye
 
-    def welcome(self):
+    def welcome(self,greeting):
         greeting = "Hello and welcome to the Bakery!"
         print(greeting)
+
+    def 
     
     
