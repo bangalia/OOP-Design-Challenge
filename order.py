@@ -1,5 +1,6 @@
 import random
 from cupcake import Cupcake
+from toppings import Toppings
 
 class Order:
     def __init(self,order_number,order_contents):
@@ -7,6 +8,18 @@ class Order:
         self.order_contents = order_contents
 
     def take_order(self):
-        print("What would you like to order?")
+        total_cost = 0
+        for topping in self.toppings:
+            total_cost += toppings.price
+        return total_cost
     
-    def donation(self)
+    @staticmethod
+    def loyalty(rewards):
+        if rewards == "yes":
+           return f"Thank you for joining our rewards program"
+        else:
+            return f"Okay, maybe next time!"
+    
+    def customerbonus(self):
+        lucky_number = random.randint(0,self.order_number)
+        return lucky_number

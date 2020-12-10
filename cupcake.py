@@ -6,6 +6,7 @@ class Cupcake:
         self.flavor = flavor
         self.icing = icing
         self.toppings = list()
+    
 
     def order_chocolate(self):
         return f"You order a {self.flavor} cupcake with {self.icing}"
@@ -14,9 +15,9 @@ class Cupcake:
         return f"You ordered a {self.flavor} cupcake {self.icing}"
     
     @classmethod
-    def gf(cls,glutenfree):
-        return f"I need a {glutenfree} cupcake please"
+    def alternate(cls,newdessert):
+        return f"I don't like cupcakes, may I have a {newdessert}?"
 
 
-    order_chocolate = Cupcake("chocolate","chocolate")
-    order_vanilla = Cupcake("vanilla,vanilla")
+    #order_chocolate = Cupcake("chocolate","chocolate")
+   # order_vanilla = Cupcake("vanilla","vanilla")
