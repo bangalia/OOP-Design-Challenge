@@ -4,11 +4,10 @@ from icecream import Ice_Cream
 
 class Bakery:
 
-    order = []
 
-    def __init__(self,greeting, customer):
+    def __init__(self,greeting, customer, order):
         self.greeting = greeting
-        self.new_customer = customer
+        self.order = []
     
     def welcome(self):
         greeting = "Hello and welcome to the bakery"
@@ -63,7 +62,7 @@ class Bakery:
 
         return Ice_Cream(flavor, topping, drizzle, container)
 
-    def append_icecream(self):
+    def append_icecream(self,icecream):
         user_icecream = self.add_icecream()
         self.order.append(user_icecream)
 

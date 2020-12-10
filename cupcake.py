@@ -19,7 +19,7 @@ class Cupcake:
         Topping: {self.topping}\n
         """
 
-    #if __name == "main":
-        # Running this file from terminal will run this code
-        # cupcake = Cupcake("Vanilla", "Chocolate")
-        #return f"You chose a {cupcake.favor} cupcake with {cupcake.icing}"
+    if __name == "main":
+         #Running this file from terminal will run this code
+         cupcake = Cupcake("Vanilla", "Chocolate")
+        return f"You chose a {cupcake.favor} cupcake with {cupcake.icing}"
