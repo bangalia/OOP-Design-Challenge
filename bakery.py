@@ -6,21 +6,23 @@ class Bakery:
 
     order = []
 
-    def __init__(self,greeting):
+    def __init__(self,greeting, customer):
         self.greeting = greeting
-        #self.goodbye = goodbye
-
-    def welcome(self,greeting):
-        greeting = "Hello and welcome to the Bakery!"
-        print(greeting)
+        self.new_customer = customer
+    
+    def welcome(self):
+        greeting = "Hello and welcome to the bakery"
+        return greeting
+    
+    def leave(self):
+        goodbye = "Thank you, come again!"
+        return goodbye
 
     def add_cupcake(self):
         choice = int(input("Would you like to add a cupcake, brownie, or ice cream? Type 1 for cupcake, Type 2 for brownie, Type 3 for ice cream:"))
 
         while (choice != 1) or (choice != 2) or (choice != 3):
-            choice = int(
-              input("Those aren't ready yet. \n Would you like to add a cupcake, brownie, or ice cream? Type 1 for cupcake, Type 2 for brownie, Type 3 for ice cream:")  
-            )
+            choice = int(input("Those aren't ready yet. \n Would you like to add a cupcake, brownie, or ice cream? Type 1 for cupcake, Type 2 for brownie, Type 3 for ice cream:"))
         
         flavor = input("What flavor would you like? \n")
         icing = input("What icing would you like? \n")
@@ -64,13 +66,15 @@ class Bakery:
     def append_icecream(self):
         user_icecream = self.add_icecream()
         self.order.append(user_icecream)
-    
+
+
     if __name__ == "__main__":
-        Bakery = Bakery(greeting)
+        #bakery = Bakery()
+        print(welcome)
+        customer1 = Bakery("Anita")
         cupcake1 = Cupcake("Vanilla", "Caramel", "Sprinkles")
         brownie1 = Brownie("Red velvet", "Cream Cheese", "Walnuts", "9")
         icecream1 = Ice_Cream("Vanilla", "Oreos", "Chocolate", "Cone")
         bakery.append_cupcake(cupcake1)
         bakery.append_brownie(brownie1)
-        bakery.append_icecream(icecream1)
 

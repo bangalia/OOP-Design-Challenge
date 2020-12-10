@@ -7,17 +7,17 @@ class Cupcake:
         self.icing = icing
         self.topping = topping
     
+    def print_cupcake(self):
+        print(f" You chose a {self.flavor} cupcake with {self.icing} and {self.topping}")
 
-    def order_chocolate(self):
-        return f"You order a {self.flavor} cupcake with {self.icing} with {self.topping}"
 
-    def order_vanilla(self):
-        return f"You ordered a {self.flavor} cupcake {self.icing}"
-    
-    @classmethod
-    def alternate(cls,newdessert):
-        return f"I don't like cupcakes, may I have a {newdessert}?"
-
+    def __str__(self):
+        return f"""
+        \n
+        Flavor: {self.flavor}\n
+        Icing: {self.icing}\n
+        Topping: {self.topping}\n
+        """
 
     #if __name == "main":
         # Running this file from terminal will run this code
