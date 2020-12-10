@@ -5,7 +5,7 @@ class Cupcake:
 
         self.flavor = flavor
         self.icing = icing
-        self.toppings = list()
+        self.toppings = toppings
     
 
     def order_chocolate(self):
@@ -19,5 +19,7 @@ class Cupcake:
         return f"I don't like cupcakes, may I have a {newdessert}?"
 
 
-    #order_chocolate = Cupcake("chocolate","chocolate")
-   # order_vanilla = Cupcake("vanilla","vanilla")
+    #if __name == "main":
+        # Running this file from terminal will run this code
+        # cupcake = Cupcake("Vanilla", "Chocolate")
+        #return f"You chose a {cupcake.favor} cupcake with {cupcake.icing}"
