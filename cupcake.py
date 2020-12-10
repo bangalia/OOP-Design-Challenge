@@ -1,15 +1,15 @@
 from toppings import Toppings
 
 class Cupcake:
-    def __init__(self,flavor,icing):
+    def __init__(self,flavor,icing, topping):
 
         self.flavor = flavor
         self.icing = icing
-        self.toppings = toppings
+        self.topping = topping
     
 
     def order_chocolate(self):
-        return f"You order a {self.flavor} cupcake with {self.icing}"
+        return f"You order a {self.flavor} cupcake with {self.icing} with {self.topping}"
 
     def order_vanilla(self):
         return f"You ordered a {self.flavor} cupcake {self.icing}"

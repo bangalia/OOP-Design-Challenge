@@ -1,8 +1,8 @@
 from cupcake import Cupcake
 
 class Ice_Cream(Cupcake):
-    def __init__(self, flavor, toppings, drizzle, container):
-        super.__init__(flavor,toppings)
+    def __init__(self, flavor, topping, drizzle, container):
+        super.__init__(flavor,topping)
         self.drizzle = drizzle
         self.container = container
 
