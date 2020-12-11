@@ -1,5 +1,3 @@
-from toppings import Toppings
-
 class Cupcake:
     def __init__(self,flavor,icing, topping):
 
@@ -19,7 +17,7 @@ class Cupcake:
         Topping: {self.topping}\n
         """
 
-    if __name == "main":
+    #if __name__ == "main":
          #Running this file from terminal will run this code
-         cupcake = Cupcake("Vanilla", "Chocolate")
-        return f"You chose a {cupcake.favor} cupcake with {cupcake.icing}"
+         #cupcake = Cupcake("Vanilla", "Chocolate","cookies")
+    #return f"You chose a {cupcake.flavor} cupcake with {cupcake.icing}"
